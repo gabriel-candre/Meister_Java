@@ -21,3 +21,15 @@ Then, the program splits the string, storing them in the array.
 At last, the program returns the text with no white spaces
 
 <img src="/img/Q2_scrsht.png">
+
+# Question 3
+
+Question: Write a Java Program to swap two numbers without using the third variable.
+
+The program creates an array with the numbers informed by the user, and swaps the desired numbers. 
+On this project, the user must create an array with any numbers of his choice. 
+Then, the program returns the array the user informed. 
+After that, the program asks the user which numbers of the array the program must swap. 
+Finally, the program returns the array with the especified numbers swapped.
+
+<img src="/img/Q3_scrsht.png">
