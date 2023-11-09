@@ -6,17 +6,22 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		//defining the phrase to be formatted
 		System.out.println("Please, write a paragraph: ");
 		
 		String original = sc.nextLine();
 		System.out.println();
 
+		//stores the amount of white spaces
         int words = original.split(" ", -1).length - 1;
 		
+		//defining the array to store the trimmed strings
 		String []  vect = new String[words];
 		
+		//stores the strings into the array
 		vect = original.split(" ");
 		
+		//prints the altered phrase
 		for (int i = 0; i <= words; i++) {
 			System.out.print(vect[i]);
 		}

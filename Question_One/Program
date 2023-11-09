@@ -9,10 +9,13 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		//creates list
 		List<String> list = new ArrayList<>();
 		
+		//defines variable for further use
 		char op = 'n';
 		
+		//structure to fill the list
 		do {
 			System.out.print("Please, enter a word to be added to the list: ");
 			String temp = sc.next();
@@ -38,8 +41,10 @@ public class Program {
 		} while (op != 'y');
 		System.out.println();
 
+		//creates stream list with filters
         List<String> result = list.stream().filter(x -> x.charAt(0) == 'a' && x.length() == 3).collect(Collectors.toList());
 		
+		//prints both lists
 		System.out.println("This is your list original list: " + list);
 		System.out.println("This is your list formatted: " + result);
 
