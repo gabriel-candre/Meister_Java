@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		List<String> list = new ArrayList<>();
+		
+		char op = 'n';
+		
+		do {
+			System.out.print("Please, enter a word to be added to the list: ");
+			String temp = sc.next();
+			if (temp.contains("close")) {
+				System.out.println("Do you wish to add - close - to the list? (y/n)");
+				char question = sc.next().charAt(0);
+				if (question == 'y') {
+					temp = "close";
+					list.add(temp);
+				}
+				else {
+					
+					op = 'y';
+				}
+			}
+			else {
+				
+				list.add(temp);
+			
+			}
+			
+			
+		} while (op != 'y');
+		System.out.println();
+
+        sc.close();
+    }
+}
