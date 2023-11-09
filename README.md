@@ -6,7 +6,7 @@ Question: Given a list of strings, write a method that returns a list of all str
 The program asks the user to build the List.
 In the building process, the word to terminate the creation is 'close', so the programa asks if the user wants to include 'close' in the list or not.
 After that, the program selects the list elements that fit the informed filter.
-At last, ir prints both lists.
+At last, it prints both lists.
 
 <img src="/img/Q1_scrsht.png">
 
