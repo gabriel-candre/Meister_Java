@@ -38,6 +38,11 @@ public class Program {
 		} while (op != 'y');
 		System.out.println();
 
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'a' && x.length() == 3).collect(Collectors.toList());
+		
+		System.out.println("This is your list original list: " + list);
+		System.out.println("This is your list formatted: " + result);
+
         sc.close();
     }
 }
